@@ -1,0 +1,22 @@
+#include <Servo.h>
+
+Servo miServo;  // Crear un objeto Servo para controlar un servo motor
+
+void setup() {
+  miServo.attach(9);  // El servo está conectado al pin 9
+}
+
+void loop() {
+  // Mover el servo a 0 grados
+  miServo.write(0);
+  delay(1000);  // Esperar 1 segundo
+
+  // Mover el servo a 180 grados
+  miServo.write(180);
+  delay(1000);  // Esperar 1 segundo
+
+  // Esperar 3 segundos
+  delay(3000);
+
+  // Repetir el bucle
+}
